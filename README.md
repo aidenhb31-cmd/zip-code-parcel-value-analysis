@@ -52,12 +52,7 @@ Visualization
 A Power BI dashboard is planned to visualize ZIP-code-level property values and allow users to explore geographic differences interactively.
 
 Future Improvements
-Add Power BI dashboard
-Analyze property value distributions
-Identify high-value and low-value ZIP-code segments
-Investigate outliers
-Compare cities and ZIP codes
-Develop additional geographic analyses
+Add Power BI dashboard, Analyze property value distributions, Identify high-value and low-value ZIP-code segments , Investigate outliers, Compare cities and ZIP codes
 Author
 
 Aiden Bilyard
