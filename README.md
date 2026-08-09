@@ -45,7 +45,6 @@ MIN() and MAX()
 ROUND()
 REGEXP_EXTRACT()
 APPROX_QUANTILES()
-Results
 
 Visualization
 
