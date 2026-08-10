@@ -1,9 +1,10 @@
 # zip-code-parcel-value-analysis
 SQL and BigQuery analysis of parcel values across ZIP codes around Wake County to identify geographic property-value patterns.
 The goal is to understand how parcel values vary by ZIP code and identify areas with higher or lower concentrations of property value.
+
 Tools & Technologies
-Google BigQuery
-Power BI (planned)
+Google BigQuery & Power BI (planned)
+
 Data Preparation
 
 The dataset contains parcel-level property information, including geographic identifiers, land values, property values, and property types. 
