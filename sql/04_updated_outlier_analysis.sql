@@ -1,0 +1,20 @@
+SELECT MCITY,MSTATE,MZIP,
+  CASE
+    WHEN MCITY IS NULL OR TRIM(MCITY) = '' THEN 'Bad City'
+    WHEN MSTATE IS NULL OR MSTATE != 'NC' THEN 'Bad State'
+    WHEN MZIP IS NULL THEN 'Missing ZIP'
+    WHEN NOT REGEXP_CONTAINS(MZIP, r'^\d{5}(-\d{4})?$') THEN 'Bad ZIP'
+    ELSE 'OK'
+  END AS data_quality_issue,
+
+FROM `project.dataset.table`
+
+WHERE
+  MCITY IS NULL
+  OR TRIM(MCITY) = ''
+  OR MSTATE IS NULL
+  OR MSTATE != 'NC'
+  OR MZIP IS NULL
+  OR NOT REGEXP_CONTAINS(MZIP, r'^\d{5}(-\d{4})?$')
+
+GROUP BY data_quality_issue,MCITY,MSTATE,MZIP
